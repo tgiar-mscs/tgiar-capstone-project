@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    background-color: floralwhite;
+}
+
+h1 {
+    border: thick double black;
+    padding: 5px 50px 35px 100px;
+    text-align: center;
+    color: red;
+    font-family: bold Arial, Helvetica, sans-serif;
+    font-size: 80pt;
+    background-color: darkgray;
+}
+
+.Tips {
+    padding: 250px 50px 100px 100px;
+    margin-right: auto;
+    font: darkred;
+}
+
+.image {
+    margin-left: auto;
+}
+
+footer {
+    border: 6px double black;
+    text-align: center;
+    font-size: 18pt;
+    background-color: darkgray;
+}
