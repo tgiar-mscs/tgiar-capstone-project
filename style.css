@@ -1,32 +1,82 @@
 @charset "utf-8";
 
-body {
-    background-color: floralwhite;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
+.title {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
     border: thick double black;
-    padding: 5px 50px 35px 100px;
+    padding: 5px 40px 35px 100px;
     text-align: center;
     color: red;
-    font-family: bold Arial, Helvetica, sans-serif;
     font-size: 80pt;
-    background-color: darkgray;
+    background-color: rgb(189, 187, 187);
 }
 
-.Tips {
-    padding: 250px 50px 100px 100px;
-    margin-right: auto;
-    font: darkred;
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.search {
+    border-radius: 20px;
+    margin: 40px;
+    padding: 10px;
+    width: 200px;
+    height: 23px;
+    /* color:brown;
+    font-size: 30px;
+    font-weight: bold; */
+}
+
+.textbox {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(221, 228, 233);
+    margin-bottom: 0px;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.tips {
+    border: thick double black;
+    display: flex;
+    background-color: aliceblue;
+    font-size:  35px;
+    color: red;
 }
 
 .image {
-    margin-left: auto;
+    border: thick double black;
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
+.footer {
+    margin-top: 80px;
+    padding: 5px 40px 35px 100px;
+    display: flex;
+    justify-content: center;
     border: 6px double black;
     text-align: center;
     font-size: 18pt;
-    background-color: darkgray;
+    background-color: rgb(189, 187, 187);
 }
