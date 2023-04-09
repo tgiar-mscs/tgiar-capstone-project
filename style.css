@@ -1,80 +1,70 @@
 @charset "utf-8";
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    border: thick double black;
-    padding: 5px 40px 35px 100px;
-    text-align: center;
-    color: red;
-    font-size: 80pt;
-    background-color: rgb(189, 187, 187);
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 40px 35px 100px;
+  text-align: center;
+  color: red;
+  font-size: 80pt;
 }
 
 .main {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
 }
-
+/* 
 .middle {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-}
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+} */
 
 .search {
-    border-radius: 20px;
-    margin: 40px;
-    padding: 10px;
-    width: 200px;
-    height: 23px;
+  border-radius: 20px;
+  margin: 40px;
+  padding: 10px;
+  width: 200px;
+  height: 23px;
 }
 
 .textbox {
-    font-size: 30px;
-    text-decoration: underline;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 body {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    font-family: 'Roboto', sans-serif;
-    background-color:rgb(221, 228, 233);
-    margin-bottom: 0px;
+  background-image: url('/images/tornadobackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0px;
 }
 
 ul li {
-    margin: 10px;
+  margin: 10px;
 }
 
 .tips {
-    border: thick double black;
-    display: flex;
-    background-color: aliceblue;
-    font-size:  35px;
-    color: red;
-}
-
-.image {
-    border: thick double black;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  font-size: 25px;
+  color: black;
 }
 
 .footer {
-    margin-top: 80px;
-    padding: 5px 40px 35px 100px;
-    display: flex;
-    justify-content: center;
-    border: 6px double black;
-    text-align: center;
-    font-size: 18pt;
-    background-color: rgb(189, 187, 187);
+  margin-top: 74px;
+  padding: 5px 40px 35px 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 18pt;
 }
-

@@ -1,35 +1,36 @@
 'use strict';
-let searchBar = document.querySelector('.search');
+const searchBar = document.querySelector('.search');
 
 document.addEventListener('keydown', function (e) {
+  const convertToLowerCase = searchBar.value.toLowerCase();
   console.log(e.key);
   if (e.key === 'Enter') {
-    if (searchBar.value === 'Fire') {
+    if (convertToLowerCase === 'fire') {
       console.log('Fire was searched');
       window.location.href = 'fire.html';
-    } else if (searchBar.value === 'Gas Leak') {
+    } else if (convertToLowerCase === 'gas leak') {
       console.log('Gas Leak was searched');
       window.location.href = 'gas_leak.html';
-    } else if (searchBar.value === 'Robbery') {
+    } else if (convertToLowerCase === 'robbery') {
       console.log('Robbery was searched');
       window.location.href = 'robbery.html';
-    } else if (searchBar.value === 'Flood') {
+    } else if (convertToLowerCase === 'flood') {
       console.log('Flood was searched');
       window.location.href = 'flood.html';
-    } else if (searchBar.value === 'Poison') {
+    } else if (convertToLowerCase === 'poison') {
       console.log('Poison was searched');
       window.location.href = 'poison.html';
-    } else if (searchBar.value === 'Chemical Spill') {
+    } else if (convertToLowerCase === 'chemical spill') {
       console.log('Chemical Spill was searched');
       window.location.href = 'chemical_spill.html';
-    } else if (searchBar.value === 'Weather') {
+    } else if (convertToLowerCase === 'weather') {
       console.log('Weather was searched');
       window.location.href = 'weather.html';
-    } else if (searchBar.value === 'Explosion') {
+    } else if (convertToLowerCase === 'explosion') {
       console.log('Explosion was searched');
       window.location.href = 'explosion.html';
     } else {
-      console.log(`User searched for ${searchBar.value}`);
+      console.log(`User searched for ${convertToLowerCase}`);
       alert('Search Invalid - Please try again!');
     }
   }
