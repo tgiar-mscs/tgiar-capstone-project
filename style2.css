@@ -12,9 +12,15 @@ body {
   background-position: right;
 }
 
-/* .flood {
-  background-image: ;
-} */
+.flood {
+  background-image: url(images/flooding.JPG);
+  background-size: 700px;
+}
+
+.weather {
+  background-image: url(images/clouds.JPG);
+  background-size: 650px;
+}
 
 .title {
   margin-bottom: 60px;
@@ -24,7 +30,7 @@ body {
   padding: 5px 40px 35px 100px;
   text-align: center;
   color: red;
-  font-size: 80pt;
+  font-size: 70pt;
 }
 
 ul li {
@@ -42,5 +48,5 @@ ul li {
   padding: 5px 40px 35px 100px;
   display: flex;
   justify-content: left;
-  font-size: 18pt;
+  font-size: 15pt;
 }
