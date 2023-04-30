@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+:root {
+  --clr-rgba: rgba(221, 12, 12, 0.918);
+  --clr-accent: white;
+  --clr-light: gray;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -22,15 +28,55 @@ body {
   background-size: 650px;
 }
 
+.chemicalSpill {
+  background-image: url(images/chemical.jpeg);
+  background-size: 750px;
+}
+
+.explosion {
+  background-image: url(images/explosion.jpeg);
+  background-size: 600px;
+}
+
+.fire {
+  background-image: url(images/fire-burn-hell-warm-57461.jpeg);
+  background-size: 750px;
+}
+
+.gasLeak {
+  background-image: url(images/gasleak.jpeg);
+  background-size: 600px;
+}
+
+.robbery {
+  background-image: url(images/robbery.jpeg);
+  background-size: 600px;
+}
+
+.poison {
+  background-image: url(images/poison.jpeg);
+  background-size: 600px;
+}
+
 .title {
   margin-bottom: 60px;
-  text-decoration: underline;
   display: flex;
   justify-content: left;
   padding: 5px 40px 35px 100px;
   text-align: center;
   color: red;
   font-size: 70pt;
+  animation: slideInRight 1s ease-in 1;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(250px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 ul li {
@@ -41,6 +87,22 @@ ul li {
   display: flex;
   font-size: 35px;
   color: black;
+}
+
+#backBtn {
+  font-size: 20px;
+  background-color: var(--clr-rgba);
+  color: var(--clr-accent);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  transition: all 0.3s;
+}
+
+#backBtn:hover {
+  transform: translateY(-5px);
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
 }
 
 .footer {
